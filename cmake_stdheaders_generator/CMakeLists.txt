@@ -65,10 +65,11 @@ generate_mingw_stdthreads_header(condition_variable "${MINGW_STDTHREADS_DIR}")
 generate_mingw_stdthreads_header(future "${MINGW_STDTHREADS_DIR}")
 # <mutex>
 generate_mingw_stdthreads_header(mutex "${MINGW_STDTHREADS_DIR}")
-# <shared_mutex>
-generate_mingw_stdthreads_header(shared_mutex "${MINGW_STDTHREADS_DIR}")
 # <thread>
 generate_mingw_stdthreads_header(thread "${MINGW_STDTHREADS_DIR}")
+# <shared_mutex>
+set(template_file_path "${PROJECT_SOURCE_DIR}/template2.cpp")
+generate_mingw_stdthreads_header(shared_mutex "${MINGW_STDTHREADS_DIR}")
 
 # the generated headers are to be considered as a header only library
 # so we create an interface target

@@ -3,6 +3,11 @@ mingw-std-threads
 
 Implementation of standard C++11 threading classes, which are currently still missing on MinGW GCC.
 
+This Fork
+----------------------
+This fork solves an issue with shared_mutex not importing the existing MinGW
+libraries properly.
+
 Target Windows version
 ----------------------
 This implementation should work with Windows XP (regardless of service pack), or newer.
