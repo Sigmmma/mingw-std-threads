@@ -1,0 +1,8 @@
+# All the generated build files
+CMakeFiles/
+Makefile
+cmake_install.cmake
+cmake_stdheaders_generator/CMakeFiles/
+cmake_stdheaders_generator/Makefile
+cmake_stdheaders_generator/cmake_install.cmake
+cmake_stdheaders_generator/cmake_stdheaders_generator/
