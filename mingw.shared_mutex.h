@@ -302,9 +302,9 @@ public:
     }
 };
 
-#if __cplusplus >= 201402L
-using std::shared_lock;
-#else
+//#if __cplusplus >= 201402L
+//using std::shared_lock;
+//#else
 //    If not supplied by shared_mutex (eg. because C++14 is not supported), I
 //  supply the various helper classes that the header should have defined.
 template<class Mutex>
@@ -474,7 +474,7 @@ void swap( shared_lock<Mutex>& lhs, shared_lock<Mutex>& rhs ) noexcept
 {
     lhs.swap(rhs);
 }
-#endif  //  C++11
+//#endif  //  C++11
 } //  Namespace mingw_stdthread
 
 namespace std

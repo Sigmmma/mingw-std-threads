@@ -4,9 +4,10 @@ project(cmake_stdheaders_generator)
 set(output_include_path "${PROJECT_BINARY_DIR}/${PROJECT_NAME}")
 message("${PROJECT_NAME}: output_include_path set to ${output_include_path}")
 
+set(template_file_path "${PROJECT_SOURCE_DIR}/template.cpp")
+
 function(generate_mingw_stdthreads_header header_file_name 
                                           mingw_stdthreads_folder)
-    set(template_file_path "${PROJECT_SOURCE_DIR}/template.cpp")
     set(destination_file_path "${output_include_path}/${header_file_name}")
 
     # Check if compiler is gcc or clang
